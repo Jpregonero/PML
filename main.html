@@ -408,7 +408,7 @@ colnames(train)</code></pre>
 ## 0.28 0.19 0.17 0.16 0.18</code></pre>
 </div>
 <div id="mising-data" class="section level2">
-<h2>Mising Data</h2>
+<h2>Missing Data</h2>
 <p>In a quick view, we see that there are variables with many NA values, so we check the variables with more than 0 NAs.</p>
 <p>There are 67 variables that have 19,216 observations with NA values (98% of all observations), their names suggest that they are calculations from original measures, so we will drop them as predictors.</p>
 <pre class="r"><code>train2 &lt;- train %&gt;% select(-all_of(colnames(np1)))</code></pre>
